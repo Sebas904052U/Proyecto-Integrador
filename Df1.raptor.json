@@ -1,0 +1,1226 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign1",
+          "selected": false,
+          "running": false
+        },
+        "assign1": {
+          "id": "assign1",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "opcion:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794793184827",
+          "selected": false,
+          "running": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "loop_1794793184827": {
+          "id": "loop_1794793184827",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "opcion = 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "beforeId": null,
+          "afterId": "output_1794793406964",
+          "selected": false,
+          "running": false
+        },
+        "output_1794793406964": {
+          "id": "output_1794793406964",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"1 Jugar, 2 Salir\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1794793433564",
+          "selected": false,
+          "running": false
+        },
+        "input_1794793433564": {
+          "id": "input_1794793433564",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "opcion",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794793478187",
+          "selected": false,
+          "prompt": "Elige una opción",
+          "running": false
+        },
+        "select_1794793478187": {
+          "id": "select_1794793478187",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "opcion = 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "assignment_1794793507299",
+          "noId": "selection_1794795623953",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794793497638": {
+          "id": "assignment_1794793497638",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ganador:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794795580526",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794793499502": {
+          "id": "assignment_1794793499502",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b2:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794793497638",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794793501299": {
+          "id": "assignment_1794793501299",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b1:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794793499502",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794793503269": {
+          "id": "assignment_1794793503269",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "v2:=3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794793501299",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794793507299": {
+          "id": "assignment_1794793507299",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "v1:=3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794793503269",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794793770977": {
+          "id": "assignment_1794793770977",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok1:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assign_1794795580526": {
+          "id": "assign_1794795580526",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "muerte:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1794795679222",
+          "selected": false,
+          "running": false
+        },
+        "selection_1794795623953": {
+          "id": "selection_1794795623953",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "opcion = 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794795638140",
+          "noId": "output_1794795640132",
+          "selected": false,
+          "running": false
+        },
+        "output_1794795638140": {
+          "id": "output_1794795638140",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Juego finalizado\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794795640132": {
+          "id": "output_1794795640132",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Opcion no valida\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794795679222": {
+          "id": "output_1794795679222",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Vaquero 1: \" + v1 + \" vidas, \" + b1 + \" balas | Vaquero 2: \" + v2 + \" vidas, \" + b2 + \" balas\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794795840488",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794795840488": {
+          "id": "loop_1794795840488",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "ganador != 0\n",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "beforeId": null,
+          "afterId": "selection_1794795920975",
+          "selected": false,
+          "running": false
+        },
+        "selection_1794795920975": {
+          "id": "selection_1794795920975",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "muerte = 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794796003604",
+          "yesId": "output_1794795932854",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794795932854": {
+          "id": "output_1794795932854",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Ronda de muerte súbita: 1 vida y 1 bala\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assign_1794796003604": {
+          "id": "assign_1794796003604",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok1:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794796054693",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794796054693": {
+          "id": "loop_1794796054693",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "ok1 = 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794797742721",
+          "beforeId": null,
+          "afterId": "input_1794796078031",
+          "selected": false,
+          "running": false
+        },
+        "input_1794796078031": {
+          "id": "input_1794796078031",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "a1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794796134427",
+          "selected": false,
+          "prompt": "Vaquero 1: 1 Disparar, 2 Recargar, 3 Defenderse",
+          "running": false
+        },
+        "select_1794796134427": {
+          "id": "select_1794796134427",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "b1 = 0 and a1 != 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794796155164",
+          "noId": "selection_1794796172885",
+          "selected": false,
+          "running": false
+        },
+        "output_1794796155164": {
+          "id": "output_1794796155164",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"No tiene balas debes recargar\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "selection_1794796172885": {
+          "id": "selection_1794796172885",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a1 < 1 or a1 > 3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794796195013",
+          "noId": "assignment_1794796222268",
+          "selected": false,
+          "running": false
+        },
+        "output_1794796195013": {
+          "id": "output_1794796195013",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Accion no valida elige solo entre 1, 2, 3\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794796222268": {
+          "id": "assignment_1794796222268",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok1:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assign_1794797742721": {
+          "id": "assign_1794797742721",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok2:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794797854454",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794797854454": {
+          "id": "loop_1794797854454",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "ok2 = 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798077569",
+          "beforeId": null,
+          "afterId": "input_1794797878101",
+          "selected": false,
+          "running": false
+        },
+        "input_1794797878101": {
+          "id": "input_1794797878101",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "a2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794797933159",
+          "selected": false,
+          "prompt": "\"Vaquero 2: \" + v2 + \" vidas, \" + b2 + \" balas\"",
+          "running": false
+        },
+        "select_1794797933159": {
+          "id": "select_1794797933159",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "b2 = 0 and a2 != 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794797961083",
+          "noId": "selection_1794798000127",
+          "selected": false,
+          "running": false
+        },
+        "output_1794797961083": {
+          "id": "output_1794797961083",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"No tienes balas\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "selection_1794798000127": {
+          "id": "selection_1794798000127",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a2 < 1 or a2 > 3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794798030969",
+          "noId": "assignment_1794798050584",
+          "selected": false,
+          "running": false
+        },
+        "output_1794798030969": {
+          "id": "output_1794798030969",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Accion no valida, solo elige entre 1 2 3\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798050584": {
+          "id": "assignment_1794798050584",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok2:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794798077569": {
+          "id": "select_1794798077569",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a1 = 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798142664",
+          "yesId": "assignment_1794798115696",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798115696": {
+          "id": "assignment_1794798115696",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b1:=b1 + 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794798142664": {
+          "id": "select_1794798142664",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a1 = 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798182415",
+          "yesId": "assignment_1794798158973",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798158973": {
+          "id": "assignment_1794798158973",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b1:=b1 - 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794798182415": {
+          "id": "select_1794798182415",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a2 = 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798246399",
+          "yesId": "assignment_1794798209370",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798209370": {
+          "id": "assignment_1794798209370",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b2:=b2 + 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794798246399": {
+          "id": "select_1794798246399",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a2 = 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798298691",
+          "yesId": "assignment_1794798261240",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798261240": {
+          "id": "assignment_1794798261240",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b2:=b2 - 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794798298691": {
+          "id": "select_1794798298691",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a1 = 1 and a2 != 3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798351133",
+          "yesId": "assignment_1794798323796",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798323796": {
+          "id": "assignment_1794798323796",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "v2:=v2 - 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794798351133": {
+          "id": "select_1794798351133",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a2 = 1 and a1 != 3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1794798398937",
+          "yesId": "assignment_1794798376012",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794798376012": {
+          "id": "assignment_1794798376012",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "v1:=v1 - 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794798398937": {
+          "id": "output_1794798398937",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Ronda terminada. Se actualizaron las vidas y balas\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1794798403530",
+          "selected": false,
+          "running": false
+        },
+        "output_1794798403530": {
+          "id": "output_1794798403530",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Vaquero 1: \" + v1 + \" vidas, \" + b1 + \" balas | Vaquero 2: \" + v2 + \" vidas, \" + b2 + \" balas\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794798455393",
+          "selected": false,
+          "running": false
+        },
+        "select_1794798455393": {
+          "id": "select_1794798455393",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "v1 <= 0 and v2 <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794798493234",
+          "noId": "selection_1794798568165",
+          "selected": false,
+          "running": false
+        },
+        "output_1794798493234": {
+          "id": "output_1794798493234",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Muerte subita\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794798497595",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794798497595": {
+          "id": "assign_1794798497595",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "v1:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794798502032",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794798502032": {
+          "id": "assign_1794798502032",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "v2:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794798506377",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794798506377": {
+          "id": "assign_1794798506377",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b1:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794798510437",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794798510437": {
+          "id": "assign_1794798510437",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "b2:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794798515203",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794798515203": {
+          "id": "assign_1794798515203",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "muerte:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "selection_1794798568165": {
+          "id": "selection_1794798568165",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "v2 <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794798640343",
+          "noId": "selection_1794798950592",
+          "selected": false,
+          "running": false
+        },
+        "output_1794798640343": {
+          "id": "output_1794798640343",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Gano el vaquero 1\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794798655689",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794798655689": {
+          "id": "assign_1794798655689",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ganador:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "selection_1794798950592": {
+          "id": "selection_1794798950592",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "v1 <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794799032785",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794799032785": {
+          "id": "output_1794799032785",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Gano el vaquero 2\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794799040274",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794799040274": {
+          "id": "assign_1794799040274",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ganador:=2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}

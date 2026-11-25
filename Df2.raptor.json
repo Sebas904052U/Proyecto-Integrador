@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign1",
+          "selected": false
+        },
+        "assign1": {
+          "id": "assign1",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "balas:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794860318620",
+          "selected": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "assign_1794860318620": {
+          "id": "assign_1794860318620",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794860356677",
+          "selected": false
+        },
+        "loop_1794860356677": {
+          "id": "loop_1794860356677",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "ok = 1\n",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1794860528983",
+          "beforeId": null,
+          "afterId": "input_1794860373416",
+          "selected": false
+        },
+        "input_1794860373416": {
+          "id": "input_1794860373416",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "a",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794860401974",
+          "selected": false,
+          "prompt": "Elige: 1 Disparar, 2 Recargar, 3 Defenderse"
+        },
+        "select_1794860401974": {
+          "id": "select_1794860401974",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "a != 1 and a != 2 and a != 3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794860436272",
+          "noId": "selection_1794860439354",
+          "selected": false
+        },
+        "output_1794860436272": {
+          "id": "output_1794860436272",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Accion no válida\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "selection_1794860439354": {
+          "id": "selection_1794860439354",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "balas = 0 and a != 2",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794860459026",
+          "noId": "assignment_1794860500118",
+          "selected": false
+        },
+        "output_1794860459026": {
+          "id": "output_1794860459026",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"No tienes balas, debes recargar\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "assignment_1794860500118": {
+          "id": "assignment_1794860500118",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "ok:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "output_1794860528983": {
+          "id": "output_1794860528983",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Jugada valida\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "selected": true
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}

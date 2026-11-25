@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794860015720",
+          "selected": false
+        },
+        "assign1": {
+          "id": "assign1",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "V2:=3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1794860036883",
+          "selected": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "assign_1794860015720": {
+          "id": "assign_1794860015720",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "V1:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign1",
+          "selected": false
+        },
+        "output_1794860036883": {
+          "id": "output_1794860036883",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Vaquero 1: 1 Disparar, 2 Recargar, 3 Defenderse | Vaquero 2: 1 Disparar, 2 Recargar, 3 Defenderse\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794860043730",
+          "selected": false
+        },
+        "select_1794860043730": {
+          "id": "select_1794860043730",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "V1 <= 0 and v2 <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "yesId": "output_1794860152445",
+          "noId": "selection_1794860143971",
+          "selected": false
+        },
+        "selection_1794860143971": {
+          "id": "selection_1794860143971",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "v2 <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794860154257",
+          "noId": "selection_1794860147971",
+          "selected": false
+        },
+        "selection_1794860147971": {
+          "id": "selection_1794860147971",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "v1 <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794860167723",
+          "noId": "output_1794860162783",
+          "selected": false
+        },
+        "output_1794860152445": {
+          "id": "output_1794860152445",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"¡MUERTE SUBITA!\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "output_1794860154257": {
+          "id": "output_1794860154257",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Gano el vaquero 1\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        },
+        "output_1794860162783": {
+          "id": "output_1794860162783",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Continua la partida\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": true
+        },
+        "output_1794860167723": {
+          "id": "output_1794860167723",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Gano el vaquero 2\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}
